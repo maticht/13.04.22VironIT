@@ -6,7 +6,7 @@ const sequelize = new Sequelize("sign", "root", "Byfly12345678.", {
         timestamps: false
     }
 });
-export const User = sequelize.define("user", {
+const User = sequelize.define("user", {
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -22,3 +22,4 @@ export const User = sequelize.define("user", {
         allowNull: false
     }
 });
+module.exports = User
